@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Student" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="37175dba-8b89-474d-8341-09d431dce38f">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="86" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="0" y="0" width="555" height="86" backcolor="#E33936" uuid="57f80b95-2c82-4855-8b4f-797057ea6a99"/>
+				<image scaleImage="FillFrame">
+					<reportElement x="0" y="0" width="80" height="86" uuid="c21b5d52-4d05-448d-a001-a0cd19a9aeb2"/>
+					<imageExpression><![CDATA["https://1.bp.blogspot.com/-JvTymg2QNag/X7rMthEbpnI/AAAAAAAAArQ/z6ZrnjsC5yEMkz2-HXSLO1vDVE5Tj75aQCLcBGAsYHQ/s320/Course-Logo-1.jpg"]]></imageExpression>
+				</image>
+				<staticText>
+					<reportElement x="240" y="10" width="100" height="30" uuid="7ee2f5ec-40d8-413f-88d7-3c201756dc8c"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[Student Report]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="380" y="56" width="100" height="30" uuid="15957312-bfcc-43e7-ad7c-8cdb97c4197b"/>
+					<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="31" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="15" width="555" height="1" uuid="04a9c4d5-af68-4738-b280-249876a779f3">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="78" splitType="Stretch">
+			<textField>
+				<reportElement x="360" y="40" width="100" height="30" uuid="9ab9485d-d510-496f-9dcd-dae944a4ae43"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="460" y="40" width="100" height="30" uuid="a534e5d1-aa1b-4a87-9149-d7a052cbc01f"/>
+				<textFieldExpression><![CDATA[" of " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
